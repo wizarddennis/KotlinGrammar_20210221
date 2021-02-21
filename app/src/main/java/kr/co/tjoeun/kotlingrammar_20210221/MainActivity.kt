@@ -3,6 +3,8 @@ package kr.co.tjoeun.kotlingrammar_20210221
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +30,13 @@ class MainActivity : AppCompatActivity() {
         
         // 변수에 담긴 강사 이름 로그로 출력
         Log.d("강사이름:", teacherName)
-        
+
+        okBtn.setOnClickListener {
+            //우선 단순 토스트로 "안녕하세요." 출력
+            Toast.makeText(this, "안녕하세요." , Toast.LENGTH_SHORT).show()
+        }
+
+
 
     }
 }
