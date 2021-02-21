@@ -34,6 +34,11 @@ class MainActivity : AppCompatActivity() {
         okBtn.setOnClickListener {
             //우선 단순 토스트로 "안녕하세요." 출력
             Toast.makeText(this, "안녕하세요." , Toast.LENGTH_SHORT).show()
+            val inputMessage = messageEdt.text.toString()
+
+            // input
+            Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
+
         }
 
 
